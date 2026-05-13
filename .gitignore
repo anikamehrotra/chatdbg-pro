@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Environments / venvs
+.venv/
+.venv-*/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Agent-internal
+.claude/
+CLAUDE.md
+
+# Benchmark intermediates (regenerable)
+bench/figures/*.png
+bench/figures/*.pdf
+bench/_logs_*
+bench/analysis_artifacts/
+bench/.workspace-cache/
+logs/
+
+# Docker / corpus build caches
+data/workspaces/
+data/backtraces/
+data/patches/
