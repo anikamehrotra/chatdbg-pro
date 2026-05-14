@@ -1,0 +1,29 @@
+{
+  "judge_model": "openrouter/openai/gpt-4o",
+  "elapsed_s": 3.354,
+  "judge_input_tokens": 2918,
+  "judge_output_tokens": 143,
+  "raw_judge_output": "{\n  \"root_cause\": 1,\n  \"local_fix\": 1,\n  \"global_fix\": 1,\n  \"rationale\": {\n    \"root_cause\": \"The response correctly identifies the defect at src/be_vm.c:743, specifically pointing out the incorrect use of negation instead of bitwise NOT.\",\n    \"local_fix\": \"The suggested code change to replace '-a->v.i' with '~a->v.i' at the correct line matches the developer patch.\",\n    \"global_fix\": \"The response provides a comprehensive explanation of why the bug exists, detailing the mismatch between the intended and actual operations, and suggests systematic verification mechanisms to prevent similar issues.\"\n  }\n}",
+  "judge_attempts": 1,
+  "judge_cost_usd": 0.008725,
+  "mut": {
+    "num_tool_calls": 17,
+    "tool_frequency": {
+      "cd": 16,
+      "echo": 1
+    },
+    "mut_input_tokens": 82171,
+    "mut_output_tokens": 2951
+  },
+  "status": "ok",
+  "scores": {
+    "root_cause": 1,
+    "local_fix": 1,
+    "global_fix": 1
+  },
+  "rationale": {
+    "root_cause": "The response correctly identifies the defect at src/be_vm.c:743, specifically pointing out the incorrect use of negation instead of bitwise NOT.",
+    "local_fix": "The suggested code change to replace '-a->v.i' with '~a->v.i' at the correct line matches the developer patch.",
+    "global_fix": "The response provides a comprehensive explanation of why the bug exists, detailing the mismatch between the intended and actual operations, and suggests systematic verification mechanisms to prevent similar issues."
+  }
+}

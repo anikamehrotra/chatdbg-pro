@@ -1,0 +1,35 @@
+{
+  "judge_model": "openrouter/openai/gpt-4o",
+  "elapsed_s": 3.097,
+  "judge_input_tokens": 11836,
+  "judge_output_tokens": 139,
+  "raw_judge_output": "{\n  \"root_cause\": 0,\n  \"local_fix\": 0,\n  \"global_fix\": 0,\n  \"rationale\": {\n    \"root_cause\": \"The response incorrectly identifies the root cause as being related to the handling of '%%' in the format string, which is not the issue described in the criteria.\",\n    \"local_fix\": \"The proposed local fix addresses a different issue related to '%%' handling, not the specific patch provided in the criteria.\",\n    \"global_fix\": \"The global fix explanation is based on an incorrect understanding of the bug, focusing on format string parsing rather than the actual issue at line 512.\"\n  }\n}",
+  "judge_attempts": 1,
+  "judge_cost_usd": 0.02842,
+  "mut": {
+    "num_tool_calls": 85,
+    "tool_frequency": {
+      "info": 1,
+      "backtrace": 1,
+      "shell": 29,
+      "code": 46,
+      "file": 1,
+      "break": 1,
+      "run": 1,
+      "python": 5
+    },
+    "mut_input_tokens": 32883,
+    "mut_output_tokens": 1504
+  },
+  "status": "ok",
+  "scores": {
+    "root_cause": 0,
+    "local_fix": 0,
+    "global_fix": 0
+  },
+  "rationale": {
+    "root_cause": "The response incorrectly identifies the root cause as being related to the handling of '%%' in the format string, which is not the issue described in the criteria.",
+    "local_fix": "The proposed local fix addresses a different issue related to '%%' handling, not the specific patch provided in the criteria.",
+    "global_fix": "The global fix explanation is based on an incorrect understanding of the bug, focusing on format string parsing rather than the actual issue at line 512."
+  }
+}

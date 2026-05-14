@@ -14,12 +14,7 @@ study sweeps eight contemporary models across two tiers of debugger access
 hand-authored synthetic crashes and real-world bugs drawn from BugBench,
 BugsCPP, and reverted patches in cJSON / Lua / Mongoose / SQLite / zlib.
 
-> **Status:** This repository is being populated. The placeholder commit
-> exists so the URL can be cited in the paper. The full code, scored
-> benchmark results, and figure-regeneration scripts will land in a single
-> tagged release shortly (`v0.1-paper`).
-
-## What will be here
+## What's here
 
 - `src/chatdbg/` — the fork (modified GDB/LLDB tool surface, tier configs,
   command allow-list).
@@ -28,12 +23,36 @@ BugsCPP, and reverted patches in cJSON / Lua / Mongoose / SQLite / zlib.
 - `bench/results/final_paper_bench/` — scored 640-cell panel (synthetic +
   real-world × T1 + T3 × 8 models) used to produce every figure in the
   paper.
-- `paper/` — the `.tex` source and compiled PDF.
-- `docs/REPRODUCE.md` — clone → Docker → `regen_figures` walkthrough.
+- `paper/` — the `.tex` source.
+- `docs/REPRODUCE.md` — clone → install → `regen_figures` walkthrough.
+
+## Quick start
+
+```bash
+git clone https://github.com/anikamehrotra/chatdbg-pro
+cd chatdbg-pro
+python3 -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -e .
+cp .env.example .env   # fill in API keys if you intend to re-run or re-judge
+
+# Re-render every paper figure from the shipped score.json files (free):
+python -m bench.charts --panel bench/results/final_paper_bench --out paper/figures/
+```
+
+See [`docs/REPRODUCE.md`](docs/REPRODUCE.md) for the full reproduction
+guide, including the re-judge and full re-run paths.
+
+## Provenance
+
+`bench/results/final_paper_bench/` was produced by two team members running
+disjoint shards of the sweep. Result directory names use neutral
+`shard-a-*` / `shard-b-*` prefixes so the audit trail of which shard
+produced which cells is preserved without putting individual names on
+filesystem paths. The mapping is documented in `_provenance.json`.
 
 ## Upstream credit
 
-ChatDBG was introduced by Zheng, Berger et al.:
+ChatDBG was introduced by Levin, Zheng, Berger et al.:
 - Paper: <https://arxiv.org/abs/2501.18504>
 - Code: <https://github.com/plasma-umass/ChatDBG>
 
@@ -43,7 +62,7 @@ pipeline. License (Apache-2.0) is inherited from the upstream project.
 
 ## Citation
 
-A `CITATION.cff` will be added with the full release. For now:
+See [`CITATION.cff`](CITATION.cff). Short form:
 
 ```
 Amin, I., Garimella, S., Mehrotra, A.

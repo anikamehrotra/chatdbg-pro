@@ -1,0 +1,28 @@
+{
+  "judge_model": "openrouter/openai/gpt-4o",
+  "elapsed_s": 2.616,
+  "judge_input_tokens": 2364,
+  "judge_output_tokens": 133,
+  "raw_judge_output": "{\n  \"root_cause\": 0,\n  \"local_fix\": 0,\n  \"global_fix\": 0,\n  \"rationale\": {\n    \"root_cause\": \"The response incorrectly identifies the root cause as a premature exit() call, which is not related to the actual defect at line 578.\",\n    \"local_fix\": \"The suggested fix involves modifying exit() calls, which is unrelated to the required change at line 578 in the code_not function.\",\n    \"global_fix\": \"The response does not address the underlying cause of the bug related to the missing unaryexp call in the default case of code_not.\"\n  }\n}",
+  "judge_attempts": 1,
+  "judge_cost_usd": 0.00468,
+  "mut": {
+    "num_tool_calls": 4,
+    "tool_frequency": {
+      "code": 4
+    },
+    "mut_input_tokens": 1660,
+    "mut_output_tokens": 3790
+  },
+  "status": "ok",
+  "scores": {
+    "root_cause": 0,
+    "local_fix": 0,
+    "global_fix": 0
+  },
+  "rationale": {
+    "root_cause": "The response incorrectly identifies the root cause as a premature exit() call, which is not related to the actual defect at line 578.",
+    "local_fix": "The suggested fix involves modifying exit() calls, which is unrelated to the required change at line 578 in the code_not function.",
+    "global_fix": "The response does not address the underlying cause of the bug related to the missing unaryexp call in the default case of code_not."
+  }
+}

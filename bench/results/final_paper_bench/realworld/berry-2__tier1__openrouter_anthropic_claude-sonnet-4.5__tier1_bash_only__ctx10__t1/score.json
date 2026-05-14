@@ -1,0 +1,29 @@
+{
+  "judge_model": "openrouter/openai/gpt-4o",
+  "elapsed_s": 2.527,
+  "judge_input_tokens": 5412,
+  "judge_output_tokens": 113,
+  "raw_judge_output": "{\n  \"root_cause\": 1,\n  \"local_fix\": 1,\n  \"global_fix\": 1,\n  \"rationale\": {\n    \"root_cause\": \"The response correctly identifies the defect at line 578 in the function code_not.\",\n    \"local_fix\": \"The response suggests adding unaryexp(finfo, OP_MOVE, e); at the correct location, matching the developer patch.\",\n    \"global_fix\": \"The response explains the underlying cause of the bug and suggests a comprehensive fix to prevent similar issues.\"\n  }\n}",
+  "judge_attempts": 1,
+  "judge_cost_usd": 0.01466,
+  "mut": {
+    "num_tool_calls": 38,
+    "tool_frequency": {
+      "cd": 37,
+      "echo": 1
+    },
+    "mut_input_tokens": 298226,
+    "mut_output_tokens": 6523
+  },
+  "status": "ok",
+  "scores": {
+    "root_cause": 1,
+    "local_fix": 1,
+    "global_fix": 1
+  },
+  "rationale": {
+    "root_cause": "The response correctly identifies the defect at line 578 in the function code_not.",
+    "local_fix": "The response suggests adding unaryexp(finfo, OP_MOVE, e); at the correct location, matching the developer patch.",
+    "global_fix": "The response explains the underlying cause of the bug and suggests a comprehensive fix to prevent similar issues."
+  }
+}

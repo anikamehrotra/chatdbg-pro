@@ -1,0 +1,43 @@
+{
+  "judge_model": "openrouter/openai/gpt-4o",
+  "elapsed_s": 2.543,
+  "judge_input_tokens": 2745,
+  "judge_output_tokens": 120,
+  "raw_judge_output": "{\n  \"root_cause\": 0,\n  \"local_fix\": 0,\n  \"global_fix\": 0,\n  \"rationale\": {\n    \"root_cause\": \"The response incorrectly identifies the root cause at a different line and function than specified in the criterion.\",\n    \"local_fix\": \"The proposed fix is not consistent with the developer patch, which involves a deletion at a specific line in code_not().\",\n    \"global_fix\": \"The response does not explain the underlying cause of the bug related to the missing unaryexp call in code_not().\"\n  }\n}",
+  "judge_attempts": 1,
+  "judge_cost_usd": 0.005503,
+  "mut": {
+    "num_tool_calls": 174,
+    "tool_frequency": {
+      "bt": 13,
+      "info": 6,
+      "file": 1,
+      "code": 96,
+      "shell": 6,
+      "set": 1,
+      "run": 5,
+      "p/x": 1,
+      "disassemble": 1,
+      "break": 6,
+      "continue": 6,
+      "python": 23,
+      "commands": 4,
+      "delete": 2,
+      "show": 1,
+      "p": 2
+    },
+    "mut_input_tokens": 33200,
+    "mut_output_tokens": 710
+  },
+  "status": "ok",
+  "scores": {
+    "root_cause": 0,
+    "local_fix": 0,
+    "global_fix": 0
+  },
+  "rationale": {
+    "root_cause": "The response incorrectly identifies the root cause at a different line and function than specified in the criterion.",
+    "local_fix": "The proposed fix is not consistent with the developer patch, which involves a deletion at a specific line in code_not().",
+    "global_fix": "The response does not explain the underlying cause of the bug related to the missing unaryexp call in code_not()."
+  }
+}

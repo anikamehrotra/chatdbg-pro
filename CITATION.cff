@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+title: "ChatDBGPro: GDB Is All You Need"
+message: "If you use this software or its artifacts, please cite the paper."
+type: software
+authors:
+  - given-names: Ibraheem
+    family-names: Amin
+    email: ia8920@princeton.edu
+    affiliation: Princeton University
+  - given-names: Shreyas
+    family-names: Garimella
+    email: sg6104@princeton.edu
+    affiliation: Princeton University
+  - given-names: Anika
+    family-names: Mehrotra
+    email: am9487@princeton.edu
+    affiliation: Princeton University
+date-released: 2026-05-13
+repository-code: "https://github.com/anikamehrotra/chatdbg-pro"
+url: "https://github.com/anikamehrotra/chatdbg-pro"
+license: Apache-2.0
+keywords:
+  - debugging
+  - large language models
+  - gdb
+  - llm-as-judge
+  - reproducibility
+preferred-citation:
+  type: conference-paper
+  title: "ChatDBGPro: GDB Is All You Need"
+  authors:
+    - given-names: Ibraheem
+      family-names: Amin
+    - given-names: Shreyas
+      family-names: Garimella
+    - given-names: Anika
+      family-names: Mehrotra
+  year: 2026
+  collection-title: "COS 484 (Natural Language Processing), Princeton University"
+references:
+  - type: software
+    title: ChatDBG
+    authors:
+      - given-names: Kyla
+        family-names: Levin
+      - family-names: Zheng
+        given-names: Ridian
+      - given-names: Emery
+        family-names: Berger
+    repository-code: "https://github.com/plasma-umass/ChatDBG"
+    notes: "Upstream project that this fork extends."

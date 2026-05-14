@@ -1,0 +1,2 @@
+<repo>/bench/cases/shift-int-overflow/program.c:9:35: runtime error: shift exponent 64 is too large for 32-bit type 'int'
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior <repo>/bench/cases/shift-int-overflow/program.c:9:35 
