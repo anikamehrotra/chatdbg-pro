@@ -26,10 +26,7 @@ Thumbs.db
 CLAUDE.md
 
 # Benchmark intermediates (regenerable)
-bench/figures/*.png
-bench/figures/*.pdf
 bench/_logs_*
-bench/analysis_artifacts/
 bench/.workspace-cache/
 logs/
 
